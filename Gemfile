@@ -38,6 +38,9 @@ group :development, :test do
   gem 'pry'
   # console enhancement
   gem 'pry-rails', require: false
+
+  gem 'rspec-rails', '~> 3.6'
+  gem 'factory_bot_rails'
 end
 
 group :development do
@@ -51,6 +54,8 @@ group :development do
   # Enhanced error messages
   gem 'better_errors'
   gem 'binding_of_caller'
+
+  gem "guard-rspec"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
